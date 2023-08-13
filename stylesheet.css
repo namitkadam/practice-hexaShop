@@ -94,7 +94,7 @@ body {
     gap: 10px;
     font-weight: 600;
     letter-spacing: 1px;
-    gap: 32px
+    gap: 32px;
   }
   header .top-header .nav-bar ul .firs a:first-child{
     color: var(--secondary-text-color);
@@ -111,18 +111,23 @@ body {
   .submenu{
     position: relative;
   }
-  .page{
+  .submenu .page {
     opacity: 0;   
     position: absolute; 
     top: 25px;  
     background: #f7f7f7;
-    padding: 5px 120px 5px 5px;
+    transition: .2s ease-in;
+    z-index: 1;
   }
   .page li{
+    width: 180px;
     border-bottom: 1px solid #eee;
+    padding: 15px 10px;
   }
-  .page:hover .submenu{
-  opacity: 1; 
+  .submenu:hover ul{
+    opacity: 1;
+    z-index: 1;
+    
   }
   /* hero  left*/
   .hero .leftsection{
@@ -154,7 +159,7 @@ body {
   #btn{
     padding-top: 40px;
   }
-  .wraper{
+  .wrapper{
   padding: 0px 15px;
   }
   .leftsection{
@@ -302,3 +307,169 @@ body {
   .Product .right-side-product{
     flex: 1;
   }
+  .Product .right-side-product .product-warpper{
+    gap: 30px;
+  }
+  .Product .right-side-product .product-warpper .product-img{
+    width: calc(50% - 15px);
+
+  }
+  .Product .right-side-product .product-warpper .product-img img{
+    display: flex;
+    width: 100%;
+  }
+  .Product .right-side-product .product-warpper #prod-tex{
+    height: 287px;
+    background-color:#f8f8f8;
+    justify-content: center;
+
+  }
+  .Product .right-side-product .product-warpper .prod-tex p{
+    text-align: center;
+    color: var(--secondary-text-color);
+  }
+  .media .heading h2{
+    font-weight: 700;
+  }
+  .media .heading p{
+    color: var(--secondary-text-color);
+    padding-bottom: 40px;
+  }
+  .media-img-boxs .img-only-box{
+    flex: 1;
+  }
+  .media-img-boxs .img-only-box img{
+    width: 100%;
+  }
+  .subscribing .left-side-subscribing{
+  width: 70%;
+  padding-right: 100px;  
+}
+ .subscribing .left-side-subscribing h2{
+  font-weight: 700;
+  padding-bottom: 20px;
+ }
+ .subscribing .left-side-subscribing p{
+  color: var(--secondary-text-color);
+  padding-bottom:30px ;
+ }
+ .subscribing .left-side-subscribing form{
+  gap: 30px;
+ }
+ .subscribing .left-side-subscribing form input{
+  height: 44px;
+  flex: 1;
+  padding: 0 20px;
+  font-size: 18px;
+  font-style: italic;
+}
+.subscribing .left-side-subscribing form a{
+  height: 44px;
+  width: 44px;
+  background: var(--primary-text-color);
+  color: var(--white-color);
+  justify-content: center;
+  border: 1px solid var(--primary-text-color);
+  transition: .4s ease-in-out;
+}
+.subscribing .left-side-subscribing form a:hover{
+  color: var(--primary-text-color);
+  background-color: transparent;
+}
+.subscribing .right-side-location{
+  width: 15%;
+}
+.subscribing .right-side-hours{
+  width: 15%;
+}
+.subscribing .right-side-location ul{
+  gap: 30px;
+}
+.subscribing .right-side-location ul li h6{
+  font-weight: 700;
+  color: var(--primary-text-color);
+}
+.subscribing .right-side-location ul li p{
+  color: var(--secondary-text-color);
+}
+.subscribing .right-side-hours ul{
+  gap: 30px;
+}
+.subscribing .right-side-hours ul li h6{
+  font-weight: 700;
+  color: var(--primary-text-color);
+}
+.subscribing .right-side-hours ul li p{
+  color: var(--secondary-text-color);
+}
+.subscribing .right-side-hours .media-social li a{
+  color: var(--secondary-text-color);
+}
+.subscribing .right-side-hours .media-social{
+  gap: 0px !important;
+}
+.subscribing .right-side-hours .media-social li a:hover{
+  color: var(--primary-text-color);
+}
+/* footer */
+footer{
+  background-color: var(--primary-text-color);
+}
+footer .footer-wrapper{
+  gap: 20px;
+  align-items: unset;
+  justify-content: space-between;
+  border-bottom:2px solid var(--secondary-text-color) ;
+  padding-bottom: 20px;
+}
+footer .footer-wrapper .left-side-footer{
+  flex-direction: column;
+  align-items: unset;
+  gap: 15px;
+  width:20% ;
+}
+footer .footer-wrapper a{
+  color: var(--white-color);
+  transition: .4s ease-in-out;
+}
+footer .footer-wrapper a:hover{
+  color: var(--secondary-text-color);
+}
+footer .footer-wrapper .footer-ul{
+  width: 20%;
+}
+footer .footer-wrapper .footer-ul li{
+  padding-bottom: 20px;
+}
+footer .footer-wrapper .footer-ul h5{
+  color: var(--white-color);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+footer .copyright{
+  margin-top: 30px;
+  color: var(--white-color);
+  text-align: center;
+}
+footer .copyright p a{
+  color: var(--white-color);
+}
+footer .copyright .copyright-icon{
+  padding: 20px 0 40px 0;
+  justify-content: center;
+  gap: 20px;
+}
+footer .copyright .copyright-icon a{
+  font-size: 22px;
+    color: #cff;
+    transition: .4s ease-in;
+}
+footer .copyright .copyright-icon a:hover{
+  color: #cc6666;
+}
+
+
+
+
+
+

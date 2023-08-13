@@ -1,0 +1,14 @@
+input{
+    display: none;
+}
+@media (max-width:991px) {
+    .nav_checkbox:checked ~ .nav_lists{
+        display: block !important;
+    }
+    .nav_checkbox:checked ~ .toggle .close{
+        display: block !important;
+    }
+    .nav_checkbox:checked ~ .toggle .dash-line{
+        display: none ;
+    }
+}
