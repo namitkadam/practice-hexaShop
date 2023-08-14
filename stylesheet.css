@@ -41,9 +41,7 @@ body {
     /* fs-18px */
   }
   .container{
-    max-width: 1260px;
-    padding: 0 15px;
-    margin: auto;
+    padding: 0 105px;
   }
   .italic{
     font-style: italic;
@@ -124,7 +122,7 @@ body {
     border-bottom: 1px solid #eee;
     padding: 15px 10px;
   }
-  .submenu:hover ul{
+  .submenu:hover .page{
     opacity: 1;
     z-index: 1;
     
@@ -174,7 +172,7 @@ body {
       gap: 30px;
   }
   .rightsection .img-box .right-img-card{
-      width: 48%;
+      width: calc(50% - 20px);
       position: relative;
   }
   .rightsection .img-box .right-img-card img{
@@ -229,6 +227,7 @@ body {
   }
   .mens .mens-cards .text-card{
     margin-top: 30px;
+    align-items: baseline;
     justify-content: space-between;
   }
   .mens .mens-cards .text-card .name-price p{
@@ -289,6 +288,7 @@ body {
     position: relative;
     left: 50px;
     font-weight: 400;
+    width: 80%;
   }
   .Product .left-side-product .quote i{
     font-size: 44px;
@@ -319,7 +319,7 @@ body {
     width: 100%;
   }
   .Product .right-side-product .product-warpper #prod-tex{
-    height: 287px;
+    /* height: 270px; */
     background-color:#f8f8f8;
     justify-content: center;
 
@@ -342,7 +342,7 @@ body {
     width: 100%;
   }
   .subscribing .left-side-subscribing{
-  width: 70%;
+  flex: 2;
   padding-right: 100px;  
 }
  .subscribing .left-side-subscribing h2{
@@ -357,11 +357,18 @@ body {
   gap: 30px;
  }
  .subscribing .left-side-subscribing form input{
+  display: block;
   height: 44px;
   flex: 1;
   padding: 0 20px;
   font-size: 18px;
   font-style: italic;
+}
+.location li{
+  width: 50%;
+  padding: 12px;
+  align-items: baseline !important;
+
 }
 .subscribing .left-side-subscribing form a{
   height: 44px;
@@ -376,40 +383,21 @@ body {
   color: var(--primary-text-color);
   background-color: transparent;
 }
-.subscribing .right-side-location{
-  width: 15%;
+.subscribing .right-side-subscribing{
+  flex: 1;
 }
-.subscribing .right-side-hours{
-  width: 15%;
+.subscribing .right-side-subscribing .location{
+  align-items: baseline !important;
 }
-.subscribing .right-side-location ul{
-  gap: 30px;
+.subscribing .right-side-subscribing .location h6{
+  font-weight: 800;
+  margin-bottom: 6px;
 }
-.subscribing .right-side-location ul li h6{
-  font-weight: 700;
-  color: var(--primary-text-color);
-}
-.subscribing .right-side-location ul li p{
+.subscribing .right-side-subscribing .location p, .media-social a{
   color: var(--secondary-text-color);
 }
-.subscribing .right-side-hours ul{
-  gap: 30px;
-}
-.subscribing .right-side-hours ul li h6{
-  font-weight: 700;
-  color: var(--primary-text-color);
-}
-.subscribing .right-side-hours ul li p{
-  color: var(--secondary-text-color);
-}
-.subscribing .right-side-hours .media-social li a{
-  color: var(--secondary-text-color);
-}
-.subscribing .right-side-hours .media-social{
-  gap: 0px !important;
-}
-.subscribing .right-side-hours .media-social li a:hover{
-  color: var(--primary-text-color);
+.subscribing .right-side-subscribing .location .media-social li{
+  padding: 0px;
 }
 /* footer */
 footer{
@@ -420,7 +408,7 @@ footer .footer-wrapper{
   align-items: unset;
   justify-content: space-between;
   border-bottom:2px solid var(--secondary-text-color) ;
-  padding-bottom: 20px;
+  padding: 90px 105px 20px 105px;
 }
 footer .footer-wrapper .left-side-footer{
   flex-direction: column;

@@ -28,7 +28,12 @@
             </a>
           </div>
           <nav class="nav-bar">
-            <ul class="flex">
+            <input type="checkbox" id="nav_checkbox" class="nav_checkbox" />
+            <label for="nav_checkbox" class="toggle">
+              <i class="fa-solid fa-bars dash-line"></i>
+              <i class="fa-regular fa-rectangle-xmark close"></i>
+            </label>
+            <ul class="flex mobile-navbar">
               <li class="firs"><a href="#">Home</a></li>
               <li><a href="#">Men's</a></li>
               <li><a href="#">Women's</a></li>
@@ -54,11 +59,6 @@
               <li><a href="#">Explore</a></li>
             </ul>
           </nav>
-          <input type="checkbox" id="nav_checkbox" class="nav_checkbox" />
-          <label for="nav_checkbox" class="toggle">
-            <i class="fa-solid fa-bars dash-line"></i>
-            <i class="fa-regular fa-rectangle-xmark close"></i>
-          </label>
         </div>
       </div>
     </header>
@@ -235,7 +235,7 @@
               </div>
             </div>
           </div>
-          <div class="men-card-wrapper">
+          <div class="men-card-wrapper last-card">
             <div class="flex men-card-img">
               <img src="./images/men-03.jpg" alt="men" />
               <ul class="flex hover-img">
@@ -342,7 +342,7 @@
               </div>
             </div>
           </div>
-          <div class="men-card-wrapper">
+          <div class="men-card-wrapper last-card">
             <div class="flex men-card-img">
               <img src="./images/men-03.jpg" alt="men" />
               <ul class="flex hover-img">
@@ -449,7 +449,7 @@
               </div>
             </div>
           </div>
-          <div class="men-card-wrapper">
+          <div class="men-card-wrapper last-card">
             <div class="flex men-card-img">
               <img src="./images/kid-03.jpg" alt="Kid" />
               <ul class="flex hover-img">
@@ -587,31 +587,27 @@
             <a href="#" class="flex"><i class="fa-solid fa-paper-plane"></i></a>
           </form>
         </div>
-        <div class="flex right-side-location">
-          <ul class="flex">
+        <div class="flex right-side-subscribing">
+          <ul class="flex location">
             <li>
               <h6>Store Location:</h6>
               <p>Sunny Isles Beach, FL 33160, United States</p>
+            </li>
+            <li>
+              <h6>Work Hours:</h6>
+              <p>07:30 AM - 9:30 PM Daily</p>
             </li>
             <li>
               <h6>Phone:</h6>
               <p>010-020-0340</p>
             </li>
             <li>
-              <h6>Office Location</h6>
-              <p>: North Miami Beach</p>
-            </li>
-          </ul>
-        </div>
-        <div class="flex right-side-hours">
-          <ul class="flex">
-            <li>
-              <h6>Work Hours:</h6>
-              <p>07:30 AM - 9:30 PM Daily</p>
-            </li>
-            <li>
               <h6>Email:</h6>
               <p>mail@domain.com</p>
+            </li>
+            <li>
+              <h6>Office Location</h6>
+              <p>: North Miami Beach</p>
             </li>
             <li>
               <h6>Social Media:</h6>
@@ -628,7 +624,7 @@
     </section>
     <!-- footer -->
     <footer>
-      <div class="container padding flex footer-wrapper">
+      <div class="flex footer-wrapper">
         <div class="flex left-side-footer">
           <div class="footer-logo">
             <img src="./images/white-logo.png" alt="logo" />
@@ -689,6 +685,5 @@
         </ul>
       </div>
     </footer>
-    <div style="height: 100vh"></div>
   </body>
 </html>

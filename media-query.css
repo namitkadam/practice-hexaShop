@@ -1,14 +1,232 @@
 input{
     display: none;
 }
+.toggle{
+    display: none;
+    font-size: 34px;
+    cursor: pointer;
+    transition: .9s ease-in-out;
+}
+.toggle .close{
+    display: none;
+}
 @media (max-width:991px) {
-    .nav_checkbox:checked ~ .nav_lists{
+    .toggle{
+        display: block;
+    }
+    .nav-bar .mobile-navbar{
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100px;
+        z-index: 1;
+        background-color: var(--white-color);
+        margin: 0 50px;
+
+    }
+        .submenu .page{
+        position: unset !important;
+        z-index: 0 !important;
+    }
+    .nav-bar .mobile-navbar li{
+        padding: 10px 0;
+        border-bottom: .5px solid var(--secondary-text-color);
+        margin: 0 50px;
+    }
+    .nav_checkbox:checked ~ .mobile-navbar{
         display: block !important;
     }
     .nav_checkbox:checked ~ .toggle .close{
-        display: block !important;
+        display: block;
     }
     .nav_checkbox:checked ~ .toggle .dash-line{
-        display: none ;
+        display: none;
     }
+    .container{
+        padding: 0 15px;
+    }
+    .hero{
+        flex-direction: column;
+        gap: 25px;
+    }
+    .last-card{
+        display: none;
+    }
+    .Product{
+        flex-direction: column;
+        gap: 25px;
+    }
+    .subscribing{
+        flex-direction: column;
+        gap: 25px;
+        padding: 0 40px;
+    }
+    .subscribing .left-side-subscribing{
+        width: 100%;
+        padding: 0;
+        
+    }
+    footer .footer-wrapper{
+        justify-content: space-around !important;
+    }
+    footer .footer-wrapper .footer-ul, footer .footer-wrapper .left-side-footer{
+        width: 40%;
+    }
+}
+@media (max-width:786px){
+    .padding{
+        padding: 60px 0;
+    }
+    .hero .img-box{
+        flex-direction: column;
+    }
+    .rightsection{
+        width: 100%;
+    }
+    .rightsection .img-box .right-img-card{
+        width: 100%;
+    }
+    .heading{
+        text-align: center;
+    }
+    .men-card-container{
+        justify-content: center;
+    }
+    .subscribing{
+        padding: 0 15px;
+    }
+    .subscribing .left-side-subscribing form{
+        flex-direction: column;
+    }
+    .subscribing .left-side-subscribing form input{
+        width: 80%;
+        padding: 10px 20px;
+    }
+    .subscribing .left-side-subscribing form a{
+        width: 80%;
+        height: 50px;
+    }
+    .subscribing .right-side-subscribing .location{
+        padding: 0 40px;
+    }
+    footer .footer-wrapper{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+    footer .footer-wrapper .footer-ul, footer .footer-wrapper .left-side-footer{
+        width: 100%;
+    }
+}
+@media (max-width: 600px){
+    h2{
+        font-size: 1.9em;
+    }
+    h3{
+        font-size: 1.2em;
+    }
+    h5{
+        font-size: 1em;
+    }
+    .container{
+        padding: 0 10px;
+    }
+    .btn{
+        padding: 6px 12px;
+    }
+    .padding-bottom{
+        padding: 10px;
+    }
+    .hero .text-box{
+        padding: 15px 30px;
+    }
+    .hero .text-box h1{
+        font-size: 28px;
+    }
+    .rightsection .img-box .right-img-card .hover-content{
+        gap: 10px;
+    }
+    .mens .mens-cards .text-card .name-price p{
+        font-size: 18px;
+    }
+    #btn{
+        padding: 10px;
+    }
+    .men-card-img img{
+        width: 100%;
+    }
+    .Product .right-side-product .product-warpper{
+        flex-direction: column;
+    }
+    .Product .left-side-product p{
+        font-size: 16px;
+    }
+    .Product .right-side-product .product-warpper #prod-tex, .Product .right-side-product .product-warpper .product-img{
+        width: 100%;
+    }
+    .media-img-boxs{
+        flex-direction: column;
+        gap: 20px;
+    } 
+    .media-img-boxs .img-only-box{
+        width: 100%;
+    }
+    .subscribing .left-side-subscribing h2{
+        font-size: 1.8em;
+    }
+    .subscribing .right-side-subscribing .location{
+        flex-direction: column;
+        text-align: center;
+    }
+    .location li{
+        width: 100%;
+    }
+    footer .footer-wrapper{
+        padding: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nav_checkbox:checked ~ .nav_lists{
+    display: block !important;
+}
+.nav_checkbox:checked ~ .toggle .close{
+    display: block !important;
+}
+.nav_checkbox:checked ~ .toggle .dash-line{
+    display: none ;
 }
