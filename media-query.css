@@ -10,6 +10,33 @@ input{
 .toggle .close{
     display: none;
 }
+@media (max-width:1200px){
+    h3{
+        font-size: 1.3em;
+    }
+    .container{
+        padding: 0 50px;
+    }
+    header .top-header .nav-bar ul{
+        gap: 20px;
+    }
+    .men-card-container{
+        gap: 20px;
+        justify-content: unset;
+    }
+    .men-card-wrapper{
+        flex: 1;
+    }
+    .men-card-img img{
+        width: 100%;
+    }
+    .mens-cards .hover-img{
+        width: 65%;
+    }
+    .subscribing .left-side-subscribing form a{
+        width: 100%;
+    }
+}
 @media (max-width:991px) {
     .toggle{
         display: block;
